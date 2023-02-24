@@ -8,7 +8,7 @@ namespace LAB1
 {
     static internal class HR
     {
-        static public void Employ(Worker worker, Organization organization, int salary = 0, string post = "DefaultPost")
+        static public void Employ(Worker worker, Organization organization, int salary = 0, string post = "")
         {
             worker.Salary = salary;
             worker.Post = post;
@@ -18,7 +18,7 @@ namespace LAB1
         static public void Dismiss(Worker worker)
         {
             worker.Salary = 0;
-            worker.Post = "DefaultPost";
+            worker.Post = "";
             worker.Workplace = null;
         }
     }

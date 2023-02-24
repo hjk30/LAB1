@@ -32,7 +32,7 @@ namespace LAB1
             set { _workplace = value; }
         }
 
-        public Worker(string name_surname = "DefaultName", int gender = 0, int age = 0, int salary = 0, string post = "DefaultPost", Organization workplace = null) : base(name_surname, gender, age)
+        public Worker(string name_surname = "DefaultName", int gender = 0, int age = 0, int salary = 0, string post = "", Organization workplace = null) : base(name_surname, gender, age)
         {
             Salary = salary;
             Post = post;
@@ -43,7 +43,7 @@ namespace LAB1
             string gender = "муж.";
             if (Gender == 1) gender = "жен.";
             string workText = " ";
-            if (Post == "DefaultPost")
+            if (Post == "")
             {
                 workText += "Безработный";
             }
