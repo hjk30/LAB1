@@ -25,7 +25,12 @@ namespace LAB1
             Organization _1C = new Organization("1C", 1991, MyPerson2);
             _1C.Print();
 
-            Worker worker1 = new Worker("Иван Васильевич Петров", 0, 30, 50000, "программист", _1C);
+            Worker worker1 = new Worker("Иван Васильевич Петров", 0, 30);
+            worker1.Print();
+
+            HR.Employ(worker1, _1C, 50000, "Программист");
+            worker1.Print();
+            HR.Dismiss(worker1);
             worker1.Print();
         }
     }

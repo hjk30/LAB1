@@ -43,13 +43,13 @@ namespace LAB1
             string gender = "муж.";
             if (Gender == 1) gender = "жен.";
             string workText = " ";
-            if (Post == "")
+            if (Post == "DefaultPost")
             {
                 workText += "Безработный";
             }
             else
             {
-                workText += "Место работы" + Workplace.Name + " пост: " + Post;
+                workText += "Место работы " + Workplace.Name + " пост: " + Post;
             }
             Console.WriteLine(NameSurname + " возраст " + Age + " пол " + gender + workText);
         }

@@ -18,7 +18,7 @@ namespace LAB1
         static public void Dismiss(Worker worker)
         {
             worker.Salary = 0;
-            worker.Post = "";
+            worker.Post = "DefaultPost";
             worker.Workplace = null;
         }
     }
