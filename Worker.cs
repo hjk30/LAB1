@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LAB1
 {
-    internal unsafe class Worker: person
+    internal class Worker: person
     {
         private int _salary;
         private string _post;
